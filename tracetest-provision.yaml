@@ -1,0 +1,10 @@
+---
+type: Test
+spec:
+  id: LbfaDqISg
+  type: pokeshop
+  enabled: true
+  name: pokeshop
+  pokeshop:
+    httpEndpoint: http://localhost:8081
+    grpcEndpoint: localhost:8082
