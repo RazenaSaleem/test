@@ -1,0 +1,16 @@
+type: Test
+spec:
+  id: abCdEfGhIj
+  name: MLServerHTTPTest
+  trigger:
+    type: http
+    method: POST
+    url: "http://ml-server.alpha.intelops.app:80/experiment/ml_server/AgentHandler/GetAgentByEmail"
+    headers:
+      Content-Type: "application/json"
+  input:
+    requestBody: '{"email": "connect2arjuna@gmail.com"}'
+  expectedOutput:
+    statusCode: 200
+    responseBody: '{"status": "success", "message": "Agent details retrieved successfully"}'
+
